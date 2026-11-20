@@ -1,0 +1,15 @@
+name: SpawnGuard
+version: '${project.version}'
+main: com.spawnguard.SpawnGuardPlugin
+api-version: '1.21'
+softdepend: [WorldGuard]
+description: Keeps hostile mobs out of the spawn safezone.
+commands:
+  spawnguard:
+    description: SpawnGuard admin command
+    usage: /spawnguard <reload|debug>
+    permission: spawnguard.admin
+permissions:
+  spawnguard.admin:
+    description: Allows /spawnguard reload and debug
+    default: op
